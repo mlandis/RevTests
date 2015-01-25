@@ -1,0 +1,61 @@
+/* Graphical model description in DOT language                                    */
+/*    To view graph:                                                              */
+/*       open this file in the program Graphviz: http://www.graphviz.org          */
+/*       or paste contents into an online viewer: http://stamm-wilbrandt.de/GraphvizFiddle */
+
+digraph REVDAG {
+   n_diversification_offset [shape=record, style=filled, fillcolor=white, label="{diversification.offset|0}"]
+   n_0x2a2dc20 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_0x2a2cdb0 [shape=oval, style="dashed,filled", fillcolor=white, label="function\n[ _mul( ) ]"]
+   n_death_rate [shape=oval, style="dashed,filled", fillcolor=white, label="death_rate\n[ _div( ) ]"]
+   n_timetree [shape=oval, style=filled, fillcolor=white, label="timetree"]
+   n_branch_rates [shape=oval, style="dashed,filled", fillcolor=white, label="branch_rates\n[ _mul( ) ]"]
+   n_clockR [shape=oval, style=filled, fillcolor=white, label="clockR"]
+   n_0x3def580 [shape=box, style=filled, fillcolor=white, label="50"]
+   n_0x3def730 [shape=box, style=filled, fillcolor=white, label="2"]
+   n_turnover [shape=oval, style=filled, fillcolor=white, label="turnover"]
+   n_0x2a2cb10 [shape=box, style=filled, fillcolor=white, label="2"]
+   n_0x2a2cc60 [shape=box, style=filled, fillcolor=white, label="2"]
+   n_0x2a2e570 [shape=oval, style="dashed,filled", fillcolor=white, label="function\n[ _sub( ) ]"]
+   n_0x2a2e960 [shape=box, style=filled, fillcolor=white, label="1"]
+   n_denom [shape=oval, style="dashed,filled", fillcolor=white, label="denom\n[ abs( ) ]"]
+   n_birth_rate [shape=oval, style="dashed,filled", fillcolor=white, label="birth_rate\n[ _div( ) ]"]
+   n_diversification [shape=oval, style=filled, fillcolor=white, label="diversification"]
+   n_base_rate [shape=record, style=filled, fillcolor=white, label="{base_rate|1}"]
+   n_phySeq_pInv [shape=record, style=filled, fillcolor=white, label="{phySeq.pInv|0}"]
+   n_Q [shape=record, style=filled, fillcolor=white, label="{Q|...}"]
+   n_root_time [shape=oval, style=filled, fillcolor=white, label="root_time"]
+   n_0x2a372d0 [shape=box, style=filled, fillcolor=white, label="52.5"]
+   n_0x2a37460 [shape=box, style=filled, fillcolor=white, label="47.5"]
+   n_rho [shape=record, style=filled, fillcolor=white, label="{rho|1}"]
+   n_phySeq [shape=oval, style=filled, fillcolor=gray, label="phySeq"]
+   n_diversification_offset -> n_diversification
+   n_0x2a2dc20 -> n_diversification
+   n_0x2a2cdb0 -> n_death_rate[style=dashed]
+   n_death_rate -> n_timetree
+   n_timetree -> n_phySeq
+   n_branch_rates -> n_phySeq
+   n_clockR -> n_branch_rates[style=dashed]
+   n_0x3def580 -> n_clockR
+   n_0x3def730 -> n_clockR
+   n_turnover -> n_0x2a2cdb0[style=dashed]
+   n_turnover -> n_0x2a2e570[style=dashed]
+   n_0x2a2cb10 -> n_turnover
+   n_0x2a2cc60 -> n_turnover
+   n_0x2a2e570 -> n_denom[style=dashed]
+   n_0x2a2e960 -> n_0x2a2e570[style=dashed]
+   n_denom -> n_birth_rate[style=dashed]
+   n_denom -> n_death_rate[style=dashed]
+   n_birth_rate -> n_timetree
+   n_diversification -> n_0x2a2cdb0[style=dashed]
+   n_diversification -> n_birth_rate[style=dashed]
+   n_base_rate -> n_branch_rates[style=dashed]
+   n_phySeq_pInv -> n_phySeq
+   n_Q -> n_phySeq
+   n_root_time -> n_timetree
+   n_0x2a372d0 -> n_root_time
+   n_0x2a37460 -> n_root_time
+   n_rho -> n_timetree
+   {rank=same; n_phySeq;}
+   graph [bgcolor=lavenderblush2, pad=0.25]
+}

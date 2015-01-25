@@ -1,0 +1,59 @@
+D <- readDiscreteCharacterData(file="sim.nex")
+n_sites <- D.nchar(1)
+mi = 1
+T <- readTrees("sim.tre")[1]
+n_taxa <- T.ntips()
+names <- T.names()
+diversification ~ dnExponential(10.0)
+moves[mi++] = mvScale(diversification, lambda = 1.0, tune = true, weight = 0.1)
+turnover ~ dnBeta(2.0, 2.0)
+moves[mi++] = mvSlide(turnover, delta = 1.0, tune = true, weight = 0.1)
+denom := abs(1.0 - turnover)
+birth_rate := diversification / (denom)
+death_rate := (turnover * diversification) / (denom)
+rho <- 1.0
+root_time ~ dnUniform(47.5,52.5)
+timetree ~ dnBDP(lambda = birth_rate, mu = death_rate, rho = rho, rootAge = root_time, samplingStrategy = "uniform", condition = "nTaxa", nTaxa = n_taxa, names = names);
+timetree.setValue(T)
+moves[mi++] = mvNodeTimeSlideUniform(timetree, weight = 0.1)
+moves[mi++] = mvSlide(root_time, delta = 2.0, tune = true, weight = 0.1)
+moves[mi++] = mvScale(root_time, lambda = 2.0, tune = true, weight = 0.1)
+moves[mi++] = mvTreeScale(tree = timetree, rootAge = root_time, delta = 1.0, tune = true, weight = 0.1)
+
+#br_M <- 5.4E-3
+#br_s <- 0.05
+#br_mu <- ln(br_M) - ((br_s * br_s) * 0.5)
+#base_rate ~ dnLnorm(br_mu, br_s)
+#moves[mi++] = mvScale(base_rate, lambda = 0.25, tune = true, weight = 10.0)
+base_rate <- 1
+n_branches <- 2 * n_taxa - 2
+clockR ~ dnGamma(2.0, 50.0)
+moves[mi++] = mvScale(clockR, lambda = 0.5, tune = true, weight= 1.0)
+branch_rates := clockR * base_rate
+
+#sf ~ dnDirichlet(sf_hp)
+#er_hp <- v(1,1,1,1,1,1)
+#er ~ dnDirichlet(er_hp)
+#Q := fnGTR(er, sf)
+#moves[mi++] = mvSimplexElementScale(er, alpha = 10.0, tune = true, weight = 3.0)
+#moves[mi++] = mvSimplexElementScale(sf, alpha = 10.0, tune = true, weight = 3.0)
+
+sf <- simplex(0.25, 0.25, 0.25, 0.25)
+er <- simplex(0.1655794, 0.1691332, 0.1655690, 0.1653027, 0.1691247, 0.1652910)
+Q <- fnGTR(er, sf)
+
+phySeq ~ dnPhyloCTMC(tree = timetree, Q = Q, branchRates = branch_rates, nSites = n_sites, type = "DNA")
+
+phySeq.clamp(D)
+
+mymodel = model(turnover)
+
+mymodel.graph("m_DPP_modelgraph.dot", verbose = false)
+
+monitors[1] = mnFile(filename = "output/sim.log", printgen = 100, diversification, turnover, birth_rate, death_rate, root_time, branch_rates)
+monitors[2] = mnFile(filename = "output/sim.trees", printgen = 500000, timetree)
+monitors[3] = mnScreen(printgen = 100, branch_rates)
+monitors[4] = mnExtNewick(filename = "output/sim.ratestrees", tree = timetree, branch_rates, printgen = 100)
+mymcmc = mcmc(mymodel, monitors, moves)
+mymcmc.burnin(generations = 1000, tuningInterval = 10)
+mymcmc.run(generations = 1000000)
