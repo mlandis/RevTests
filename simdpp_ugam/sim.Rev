@@ -1,5 +1,5 @@
 D <- readDiscreteCharacterData(file="sim.nex")
-n_sites <- D.nchar(1)
+n_sites <- D.nchar()
 mi = 1
 T <- readTrees("sim.tre")[1]
 n_taxa <- T.ntips()
@@ -13,7 +13,7 @@ birth_rate := diversification / (denom)
 death_rate := (turnover * diversification) / (denom)
 rho <- 1.0
 root_time ~ dnUniform(47.5, 52.5)
-timetree ~ dnBDP(lambda = birth_rate, mu = death_rate, rho = rho, rootAge = root_time, samplingStrategy = "uniform", condition = "nTaxa", nTaxa = n_taxa, names = names)
+timetree ~ dnBDP(lambda = birth_rate, mu = death_rate, rho = rho, rootAge = root_time, samplingStrategy = "uniform", condition = "nTaxa", taxa = names)
 timetree.setValue(T)
 moves[mi++] = mvNodeTimeSlideUniform(timetree, weight = 0.1)
 moves[mi++] = mvSlide(root_time, delta = 2.0, tune = true, weight = 0.1)
@@ -68,6 +68,7 @@ monitors[1] = mnFile(filename = "output/sim.log", printgen = 100, diversificatio
 monitors[2] = mnFile(filename = "output/sim.trees", printgen = 500000, timetree)
 monitors[3] = mnScreen(printgen = 100, mean_rt, root_time)
 monitors[4] = mnExtNewick(filename = "output/sim.ratestrees", tree = timetree, branch_rates, printgen = 100)
+monitors[5] = mnModel(filename = "output/model.log", printgen = 100)
 mymcmc = mcmc(mymodel, monitors, moves)
 mymcmc.burnin(generations = 1000, tuningInterval = 10)
 mymcmc.run(generations = 1000000)

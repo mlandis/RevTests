@@ -4,260 +4,450 @@
 /*       or paste contents into an online viewer: http://stamm-wilbrandt.de/GraphvizFiddle */
 
 digraph REVDAG {
-   n_birth_rate [shape=oval, style="dashed,filled", fillcolor=white, label="birth_rate\n[ _div( ) ]"]
-   n_0x328f150 [shape=box, style=filled, fillcolor=white, label="52.5"]
-   n_0x328f2a0 [shape=box, style=filled, fillcolor=white, label="47.5"]
+   n_turnover [shape=oval, style=filled, fillcolor=white, label="turnover"]
+   n_0x7f87fbe03b20 [shape=box, style=filled, fillcolor=white, label="2"]
+   n_0x7f87fbe03c20 [shape=box, style=filled, fillcolor=white, label="2"]
+   n_0x7f87fbe03d20 [shape=oval, style="dashed,filled", fillcolor=white, label="function\n[ first,( ) ]"]
+   n_0x7f87fbe03e30 [shape=box, style=filled, fillcolor=white, label="1"]
+   n_denom [shape=oval, style="dashed,filled", fillcolor=white, label="denom\n[ x)( ) ]"]
+   n_death_rate [shape=oval, style="dashed,filled", fillcolor=white, label="death_rate\n[ first,( ) ]"]
+   n_0x7f87fbe041b0 [shape=oval, style="dashed,filled", fillcolor=white, label="function\n[ first,( ) ]"]
+   n_diversification [shape=oval, style=filled, fillcolor=white, label="diversification"]
+   n_0x7f87fbe04b60 [shape=box, style=filled, fillcolor=white, label="10"]
+   n_birth_rate [shape=oval, style="dashed,filled", fillcolor=white, label="birth_rate\n[ first,( ) ]"]
+   n_timetree [shape=oval, style=filled, fillcolor=white, label="timetree"]
+   n_root_time [shape=oval, style=filled, fillcolor=white, label="root_time"]
+   n_0x7f87fbe0af50 [shape=box, style=filled, fillcolor=white, label="47.5"]
+   n_0x7f87fbe0b050 [shape=box, style=filled, fillcolor=white, label="52.5"]
    n_rho [shape=record, style=filled, fillcolor=white, label="{rho|1}"]
    n_phySeq [shape=oval, style=filled, fillcolor=gray, label="phySeq"]
-   n_diversification [shape=oval, style=filled, fillcolor=white, label="diversification"]
-   n_0x323e0f0 [shape=box, style=filled, fillcolor=white, label="2"]
-   n_0x3285a20 [shape=box, style=filled, fillcolor=white, label="2"]
-   n_diversification_offset [shape=record, style=filled, fillcolor=white, label="{diversification.offset|0}"]
-   n_0x32868f0 [shape=box, style=filled, fillcolor=white, label="10"]
-   n_denom [shape=oval, style="dashed,filled", fillcolor=white, label="denom\n[ abs( ) ]"]
-   n_0x32873c0 [shape=box, style=filled, fillcolor=white, label="1"]
-   n_death_rate [shape=oval, style="dashed,filled", fillcolor=white, label="death_rate\n[ _div( ) ]"]
-   n_timetree [shape=oval, style=filled, fillcolor=white, label="timetree"]
-   n_0x3285b70 [shape=oval, style="dashed,filled", fillcolor=white, label="function\n[ _mul( ) ]"]
-   n_0x3287070 [shape=oval, style="dashed,filled", fillcolor=white, label="function\n[ _sub( ) ]"]
-   n_turnover [shape=oval, style=filled, fillcolor=white, label="turnover"]
-   n_root_time [shape=oval, style=filled, fillcolor=white, label="root_time"]
-   n_branch_rates [shape=oval, style="dashed,filled", fillcolor=white, label="branch_rates\n[ v( ) ]"]
    n_phySeq_pInv [shape=record, style=filled, fillcolor=white, label="{phySeq.pInv|0}"]
-   n_ugam_rate [shape=oval, style=filled, fillcolor=white, label="ugam_rate"]
-   n_ugam_rate_offset [shape=record, style=filled, fillcolor=white, label="{ugam_rate.offset|0}"]
-   n_0x4048d10 [shape=box, style=filled, fillcolor=white, label="1000"]
+   n_branch_rates [shape=oval, style="dashed,filled", fillcolor=white, label="branch_rates\n[ ,( ) ]"]
+   n_branch_rates_1 [shape=oval, style=filled, fillcolor=white, label="branch_rates[1]"]
    n_ugam_shape [shape=oval, style=filled, fillcolor=white, label="ugam_shape"]
-   n_0x404a240 [shape=box, style=filled, fillcolor=white, label="1"]
-   n_ugam_shape_offset [shape=record, style=filled, fillcolor=white, label="{ugam_shape.offset|0}"]
-   n_branch_subrates [shape=oval, style="dashed,filled", fillcolor=white, label="branch_subrates\n[ _mul( ) ]"]
+   n_0x7f87fbe13240 [shape=box, style=filled, fillcolor=white, label="1"]
+   n_branch_rates_2 [shape=oval, style=filled, fillcolor=white, label="branch_rates[2]"]
+   n_ugam_rate [shape=oval, style=filled, fillcolor=white, label="ugam_rate"]
+   n_0x7f87fbe14970 [shape=box, style=filled, fillcolor=white, label="1000"]
+   n_branch_rates_3 [shape=oval, style=filled, fillcolor=white, label="branch_rates[3]"]
+   n_branch_rates_4 [shape=oval, style=filled, fillcolor=white, label="branch_rates[4]"]
+   n_branch_rates_5 [shape=oval, style=filled, fillcolor=white, label="branch_rates[5]"]
+   n_branch_rates_6 [shape=oval, style=filled, fillcolor=white, label="branch_rates[6]"]
+   n_branch_rates_7 [shape=oval, style=filled, fillcolor=white, label="branch_rates[7]"]
+   n_branch_rates_8 [shape=oval, style=filled, fillcolor=white, label="branch_rates[8]"]
+   n_branch_rates_9 [shape=oval, style=filled, fillcolor=white, label="branch_rates[9]"]
+   n_branch_rates_10 [shape=oval, style=filled, fillcolor=white, label="branch_rates[10]"]
+   n_branch_rates_11 [shape=oval, style=filled, fillcolor=white, label="branch_rates[11]"]
+   n_branch_rates_12 [shape=oval, style=filled, fillcolor=white, label="branch_rates[12]"]
+   n_branch_rates_13 [shape=oval, style=filled, fillcolor=white, label="branch_rates[13]"]
+   n_branch_rates_14 [shape=oval, style=filled, fillcolor=white, label="branch_rates[14]"]
+   n_branch_rates_15 [shape=oval, style=filled, fillcolor=white, label="branch_rates[15]"]
+   n_branch_rates_16 [shape=oval, style=filled, fillcolor=white, label="branch_rates[16]"]
+   n_branch_rates_17 [shape=oval, style=filled, fillcolor=white, label="branch_rates[17]"]
+   n_branch_rates_18 [shape=oval, style=filled, fillcolor=white, label="branch_rates[18]"]
+   n_branch_rates_19 [shape=oval, style=filled, fillcolor=white, label="branch_rates[19]"]
+   n_branch_rates_20 [shape=oval, style=filled, fillcolor=white, label="branch_rates[20]"]
+   n_branch_rates_21 [shape=oval, style=filled, fillcolor=white, label="branch_rates[21]"]
+   n_branch_rates_22 [shape=oval, style=filled, fillcolor=white, label="branch_rates[22]"]
+   n_branch_rates_23 [shape=oval, style=filled, fillcolor=white, label="branch_rates[23]"]
+   n_branch_rates_24 [shape=oval, style=filled, fillcolor=white, label="branch_rates[24]"]
+   n_branch_rates_25 [shape=oval, style=filled, fillcolor=white, label="branch_rates[25]"]
+   n_branch_rates_26 [shape=oval, style=filled, fillcolor=white, label="branch_rates[26]"]
+   n_branch_rates_27 [shape=oval, style=filled, fillcolor=white, label="branch_rates[27]"]
+   n_branch_rates_28 [shape=oval, style=filled, fillcolor=white, label="branch_rates[28]"]
+   n_branch_rates_29 [shape=oval, style=filled, fillcolor=white, label="branch_rates[29]"]
+   n_branch_rates_30 [shape=oval, style=filled, fillcolor=white, label="branch_rates[30]"]
+   n_branch_rates_31 [shape=oval, style=filled, fillcolor=white, label="branch_rates[31]"]
+   n_branch_rates_32 [shape=oval, style=filled, fillcolor=white, label="branch_rates[32]"]
+   n_branch_rates_33 [shape=oval, style=filled, fillcolor=white, label="branch_rates[33]"]
+   n_branch_rates_34 [shape=oval, style=filled, fillcolor=white, label="branch_rates[34]"]
+   n_branch_rates_35 [shape=oval, style=filled, fillcolor=white, label="branch_rates[35]"]
+   n_branch_rates_36 [shape=oval, style=filled, fillcolor=white, label="branch_rates[36]"]
+   n_branch_rates_37 [shape=oval, style=filled, fillcolor=white, label="branch_rates[37]"]
+   n_branch_rates_38 [shape=oval, style=filled, fillcolor=white, label="branch_rates[38]"]
+   n_branch_rates_39 [shape=oval, style=filled, fillcolor=white, label="branch_rates[39]"]
+   n_branch_rates_40 [shape=oval, style=filled, fillcolor=white, label="branch_rates[40]"]
+   n_branch_rates_41 [shape=oval, style=filled, fillcolor=white, label="branch_rates[41]"]
+   n_branch_rates_42 [shape=oval, style=filled, fillcolor=white, label="branch_rates[42]"]
+   n_branch_rates_43 [shape=oval, style=filled, fillcolor=white, label="branch_rates[43]"]
+   n_branch_rates_44 [shape=oval, style=filled, fillcolor=white, label="branch_rates[44]"]
+   n_branch_rates_45 [shape=oval, style=filled, fillcolor=white, label="branch_rates[45]"]
+   n_branch_rates_46 [shape=oval, style=filled, fillcolor=white, label="branch_rates[46]"]
+   n_branch_rates_47 [shape=oval, style=filled, fillcolor=white, label="branch_rates[47]"]
+   n_branch_rates_48 [shape=oval, style=filled, fillcolor=white, label="branch_rates[48]"]
+   n_branch_rates_49 [shape=oval, style=filled, fillcolor=white, label="branch_rates[49]"]
+   n_branch_rates_50 [shape=oval, style=filled, fillcolor=white, label="branch_rates[50]"]
+   n_branch_rates_51 [shape=oval, style=filled, fillcolor=white, label="branch_rates[51]"]
+   n_branch_rates_52 [shape=oval, style=filled, fillcolor=white, label="branch_rates[52]"]
+   n_branch_rates_53 [shape=oval, style=filled, fillcolor=white, label="branch_rates[53]"]
+   n_branch_rates_54 [shape=oval, style=filled, fillcolor=white, label="branch_rates[54]"]
+   n_branch_rates_55 [shape=oval, style=filled, fillcolor=white, label="branch_rates[55]"]
+   n_branch_rates_56 [shape=oval, style=filled, fillcolor=white, label="branch_rates[56]"]
+   n_branch_rates_57 [shape=oval, style=filled, fillcolor=white, label="branch_rates[57]"]
+   n_branch_rates_58 [shape=oval, style=filled, fillcolor=white, label="branch_rates[58]"]
+   n_branch_rates_59 [shape=oval, style=filled, fillcolor=white, label="branch_rates[59]"]
+   n_branch_rates_60 [shape=oval, style=filled, fillcolor=white, label="branch_rates[60]"]
+   n_branch_rates_61 [shape=oval, style=filled, fillcolor=white, label="branch_rates[61]"]
+   n_branch_rates_62 [shape=oval, style=filled, fillcolor=white, label="branch_rates[62]"]
+   n_branch_rates_63 [shape=oval, style=filled, fillcolor=white, label="branch_rates[63]"]
+   n_branch_rates_64 [shape=oval, style=filled, fillcolor=white, label="branch_rates[64]"]
+   n_branch_rates_65 [shape=oval, style=filled, fillcolor=white, label="branch_rates[65]"]
+   n_branch_rates_66 [shape=oval, style=filled, fillcolor=white, label="branch_rates[66]"]
+   n_branch_rates_67 [shape=oval, style=filled, fillcolor=white, label="branch_rates[67]"]
+   n_branch_rates_68 [shape=oval, style=filled, fillcolor=white, label="branch_rates[68]"]
+   n_branch_rates_69 [shape=oval, style=filled, fillcolor=white, label="branch_rates[69]"]
+   n_branch_rates_70 [shape=oval, style=filled, fillcolor=white, label="branch_rates[70]"]
+   n_branch_rates_71 [shape=oval, style=filled, fillcolor=white, label="branch_rates[71]"]
+   n_branch_rates_72 [shape=oval, style=filled, fillcolor=white, label="branch_rates[72]"]
+   n_branch_rates_73 [shape=oval, style=filled, fillcolor=white, label="branch_rates[73]"]
+   n_branch_rates_74 [shape=oval, style=filled, fillcolor=white, label="branch_rates[74]"]
+   n_branch_rates_75 [shape=oval, style=filled, fillcolor=white, label="branch_rates[75]"]
+   n_branch_rates_76 [shape=oval, style=filled, fillcolor=white, label="branch_rates[76]"]
+   n_branch_rates_77 [shape=oval, style=filled, fillcolor=white, label="branch_rates[77]"]
+   n_branch_rates_78 [shape=oval, style=filled, fillcolor=white, label="branch_rates[78]"]
+   n_branch_rates_79 [shape=oval, style=filled, fillcolor=white, label="branch_rates[79]"]
+   n_branch_rates_80 [shape=oval, style=filled, fillcolor=white, label="branch_rates[80]"]
+   n_branch_rates_81 [shape=oval, style=filled, fillcolor=white, label="branch_rates[81]"]
+   n_branch_rates_82 [shape=oval, style=filled, fillcolor=white, label="branch_rates[82]"]
+   n_branch_rates_83 [shape=oval, style=filled, fillcolor=white, label="branch_rates[83]"]
+   n_branch_rates_84 [shape=oval, style=filled, fillcolor=white, label="branch_rates[84]"]
+   n_branch_rates_85 [shape=oval, style=filled, fillcolor=white, label="branch_rates[85]"]
+   n_branch_rates_86 [shape=oval, style=filled, fillcolor=white, label="branch_rates[86]"]
+   n_branch_rates_87 [shape=oval, style=filled, fillcolor=white, label="branch_rates[87]"]
+   n_branch_rates_88 [shape=oval, style=filled, fillcolor=white, label="branch_rates[88]"]
+   n_branch_rates_89 [shape=oval, style=filled, fillcolor=white, label="branch_rates[89]"]
+   n_branch_rates_90 [shape=oval, style=filled, fillcolor=white, label="branch_rates[90]"]
+   n_branch_rates_91 [shape=oval, style=filled, fillcolor=white, label="branch_rates[91]"]
+   n_branch_rates_92 [shape=oval, style=filled, fillcolor=white, label="branch_rates[92]"]
+   n_branch_rates_93 [shape=oval, style=filled, fillcolor=white, label="branch_rates[93]"]
+   n_branch_rates_94 [shape=oval, style=filled, fillcolor=white, label="branch_rates[94]"]
+   n_branch_rates_95 [shape=oval, style=filled, fillcolor=white, label="branch_rates[95]"]
+   n_branch_rates_96 [shape=oval, style=filled, fillcolor=white, label="branch_rates[96]"]
+   n_branch_rates_97 [shape=oval, style=filled, fillcolor=white, label="branch_rates[97]"]
+   n_branch_rates_98 [shape=oval, style=filled, fillcolor=white, label="branch_rates[98]"]
+   n_branch_subrates [shape=oval, style="dashed,filled", fillcolor=white, label="branch_subrates\n[ first,( ) ]"]
    n_base_rate [shape=record, style=filled, fillcolor=white, label="{base_rate|1}"]
-   n_mean_rt [shape=oval, style="dashed,filled", fillcolor=white, label="mean_rt\n[ mean( ) ]"]
+   n_mean_rt [shape=oval, style="dashed,filled", fillcolor=white, label="mean_rt\n[ x)( ) ]"]
    n_Q [shape=record, style=filled, fillcolor=white, label="{Q|...}"]
-   n_birth_rate -> n_timetree
-   n_0x328f150 -> n_root_time
-   n_0x328f2a0 -> n_root_time
-   n_rho -> n_timetree
-   n_diversification -> n_0x3285b70[style=dashed]
-   n_diversification -> n_birth_rate[style=dashed]
-   n_0x323e0f0 -> n_turnover
-   n_0x3285a20 -> n_turnover
-   n_diversification_offset -> n_diversification
-   n_0x32868f0 -> n_diversification
+   n_turnover -> n_0x7f87fbe03d20[style=dashed]
+   n_turnover -> n_0x7f87fbe041b0[style=dashed]
+   n_0x7f87fbe03b20 -> n_turnover
+   n_0x7f87fbe03c20 -> n_turnover
+   n_0x7f87fbe03d20 -> n_denom[style=dashed]
+   n_0x7f87fbe03e30 -> n_0x7f87fbe03d20[style=dashed]
    n_denom -> n_birth_rate[style=dashed]
    n_denom -> n_death_rate[style=dashed]
-   n_0x32873c0 -> n_0x3287070[style=dashed]
    n_death_rate -> n_timetree
+   n_0x7f87fbe041b0 -> n_death_rate[style=dashed]
+   n_diversification -> n_birth_rate[style=dashed]
+   n_diversification -> n_0x7f87fbe041b0[style=dashed]
+   n_0x7f87fbe04b60 -> n_diversification
+   n_birth_rate -> n_timetree
    n_timetree -> n_phySeq
-   n_0x3285b70 -> n_death_rate[style=dashed]
-   n_0x3287070 -> n_denom[style=dashed]
-   n_turnover -> n_0x3285b70[style=dashed]
-   n_turnover -> n_0x3287070[style=dashed]
    n_root_time -> n_timetree
-   n_branch_rates -> n_phySeq
+   n_0x7f87fbe0af50 -> n_root_time
+   n_0x7f87fbe0b050 -> n_root_time
+   n_rho -> n_timetree
+   n_phySeq_pInv -> n_phySeq
    n_branch_rates -> n_branch_subrates[style=dashed]
    n_branch_rates -> n_mean_rt[style=dashed]
-   n_phySeq_pInv -> n_phySeq
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate -> n_branch_rates[style=dashed]
-   n_ugam_rate_offset -> n_ugam_rate
-   n_0x4048d10 -> n_ugam_rate
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_ugam_shape -> n_branch_rates[style=dashed]
-   n_0x404a240 -> n_ugam_shape
-   n_ugam_shape_offset -> n_ugam_shape
+   n_branch_rates -> n_phySeq
+   n_branch_rates_1 -> n_branch_rates[style=dashed]
+   n_ugam_shape -> n_branch_rates_2
+   n_ugam_shape -> n_branch_rates_3
+   n_ugam_shape -> n_branch_rates_4
+   n_ugam_shape -> n_branch_rates_5
+   n_ugam_shape -> n_branch_rates_6
+   n_ugam_shape -> n_branch_rates_7
+   n_ugam_shape -> n_branch_rates_8
+   n_ugam_shape -> n_branch_rates_9
+   n_ugam_shape -> n_branch_rates_10
+   n_ugam_shape -> n_branch_rates_11
+   n_ugam_shape -> n_branch_rates_12
+   n_ugam_shape -> n_branch_rates_13
+   n_ugam_shape -> n_branch_rates_14
+   n_ugam_shape -> n_branch_rates_15
+   n_ugam_shape -> n_branch_rates_16
+   n_ugam_shape -> n_branch_rates_17
+   n_ugam_shape -> n_branch_rates_18
+   n_ugam_shape -> n_branch_rates_19
+   n_ugam_shape -> n_branch_rates_20
+   n_ugam_shape -> n_branch_rates_21
+   n_ugam_shape -> n_branch_rates_22
+   n_ugam_shape -> n_branch_rates_23
+   n_ugam_shape -> n_branch_rates_24
+   n_ugam_shape -> n_branch_rates_25
+   n_ugam_shape -> n_branch_rates_26
+   n_ugam_shape -> n_branch_rates_27
+   n_ugam_shape -> n_branch_rates_28
+   n_ugam_shape -> n_branch_rates_29
+   n_ugam_shape -> n_branch_rates_30
+   n_ugam_shape -> n_branch_rates_31
+   n_ugam_shape -> n_branch_rates_32
+   n_ugam_shape -> n_branch_rates_33
+   n_ugam_shape -> n_branch_rates_34
+   n_ugam_shape -> n_branch_rates_35
+   n_ugam_shape -> n_branch_rates_36
+   n_ugam_shape -> n_branch_rates_37
+   n_ugam_shape -> n_branch_rates_38
+   n_ugam_shape -> n_branch_rates_39
+   n_ugam_shape -> n_branch_rates_40
+   n_ugam_shape -> n_branch_rates_41
+   n_ugam_shape -> n_branch_rates_42
+   n_ugam_shape -> n_branch_rates_43
+   n_ugam_shape -> n_branch_rates_44
+   n_ugam_shape -> n_branch_rates_45
+   n_ugam_shape -> n_branch_rates_46
+   n_ugam_shape -> n_branch_rates_47
+   n_ugam_shape -> n_branch_rates_48
+   n_ugam_shape -> n_branch_rates_49
+   n_ugam_shape -> n_branch_rates_50
+   n_ugam_shape -> n_branch_rates_51
+   n_ugam_shape -> n_branch_rates_52
+   n_ugam_shape -> n_branch_rates_53
+   n_ugam_shape -> n_branch_rates_54
+   n_ugam_shape -> n_branch_rates_55
+   n_ugam_shape -> n_branch_rates_56
+   n_ugam_shape -> n_branch_rates_57
+   n_ugam_shape -> n_branch_rates_58
+   n_ugam_shape -> n_branch_rates_59
+   n_ugam_shape -> n_branch_rates_60
+   n_ugam_shape -> n_branch_rates_61
+   n_ugam_shape -> n_branch_rates_62
+   n_ugam_shape -> n_branch_rates_63
+   n_ugam_shape -> n_branch_rates_64
+   n_ugam_shape -> n_branch_rates_65
+   n_ugam_shape -> n_branch_rates_66
+   n_ugam_shape -> n_branch_rates_67
+   n_ugam_shape -> n_branch_rates_68
+   n_ugam_shape -> n_branch_rates_69
+   n_ugam_shape -> n_branch_rates_70
+   n_ugam_shape -> n_branch_rates_71
+   n_ugam_shape -> n_branch_rates_72
+   n_ugam_shape -> n_branch_rates_73
+   n_ugam_shape -> n_branch_rates_74
+   n_ugam_shape -> n_branch_rates_75
+   n_ugam_shape -> n_branch_rates_76
+   n_ugam_shape -> n_branch_rates_77
+   n_ugam_shape -> n_branch_rates_78
+   n_ugam_shape -> n_branch_rates_79
+   n_ugam_shape -> n_branch_rates_80
+   n_ugam_shape -> n_branch_rates_81
+   n_ugam_shape -> n_branch_rates_82
+   n_ugam_shape -> n_branch_rates_83
+   n_ugam_shape -> n_branch_rates_84
+   n_ugam_shape -> n_branch_rates_85
+   n_ugam_shape -> n_branch_rates_86
+   n_ugam_shape -> n_branch_rates_87
+   n_ugam_shape -> n_branch_rates_88
+   n_ugam_shape -> n_branch_rates_89
+   n_ugam_shape -> n_branch_rates_90
+   n_ugam_shape -> n_branch_rates_91
+   n_ugam_shape -> n_branch_rates_92
+   n_ugam_shape -> n_branch_rates_93
+   n_ugam_shape -> n_branch_rates_94
+   n_ugam_shape -> n_branch_rates_95
+   n_ugam_shape -> n_branch_rates_96
+   n_ugam_shape -> n_branch_rates_97
+   n_ugam_shape -> n_branch_rates_98
+   n_ugam_shape -> n_branch_rates_1
+   n_0x7f87fbe13240 -> n_ugam_shape
+   n_branch_rates_2 -> n_branch_rates[style=dashed]
+   n_ugam_rate -> n_branch_rates_3
+   n_ugam_rate -> n_branch_rates_4
+   n_ugam_rate -> n_branch_rates_5
+   n_ugam_rate -> n_branch_rates_6
+   n_ugam_rate -> n_branch_rates_7
+   n_ugam_rate -> n_branch_rates_8
+   n_ugam_rate -> n_branch_rates_9
+   n_ugam_rate -> n_branch_rates_10
+   n_ugam_rate -> n_branch_rates_11
+   n_ugam_rate -> n_branch_rates_12
+   n_ugam_rate -> n_branch_rates_13
+   n_ugam_rate -> n_branch_rates_14
+   n_ugam_rate -> n_branch_rates_15
+   n_ugam_rate -> n_branch_rates_16
+   n_ugam_rate -> n_branch_rates_17
+   n_ugam_rate -> n_branch_rates_18
+   n_ugam_rate -> n_branch_rates_19
+   n_ugam_rate -> n_branch_rates_20
+   n_ugam_rate -> n_branch_rates_21
+   n_ugam_rate -> n_branch_rates_22
+   n_ugam_rate -> n_branch_rates_23
+   n_ugam_rate -> n_branch_rates_24
+   n_ugam_rate -> n_branch_rates_25
+   n_ugam_rate -> n_branch_rates_26
+   n_ugam_rate -> n_branch_rates_27
+   n_ugam_rate -> n_branch_rates_28
+   n_ugam_rate -> n_branch_rates_29
+   n_ugam_rate -> n_branch_rates_30
+   n_ugam_rate -> n_branch_rates_31
+   n_ugam_rate -> n_branch_rates_32
+   n_ugam_rate -> n_branch_rates_33
+   n_ugam_rate -> n_branch_rates_34
+   n_ugam_rate -> n_branch_rates_35
+   n_ugam_rate -> n_branch_rates_36
+   n_ugam_rate -> n_branch_rates_37
+   n_ugam_rate -> n_branch_rates_38
+   n_ugam_rate -> n_branch_rates_39
+   n_ugam_rate -> n_branch_rates_40
+   n_ugam_rate -> n_branch_rates_41
+   n_ugam_rate -> n_branch_rates_42
+   n_ugam_rate -> n_branch_rates_43
+   n_ugam_rate -> n_branch_rates_44
+   n_ugam_rate -> n_branch_rates_45
+   n_ugam_rate -> n_branch_rates_46
+   n_ugam_rate -> n_branch_rates_47
+   n_ugam_rate -> n_branch_rates_48
+   n_ugam_rate -> n_branch_rates_49
+   n_ugam_rate -> n_branch_rates_50
+   n_ugam_rate -> n_branch_rates_51
+   n_ugam_rate -> n_branch_rates_52
+   n_ugam_rate -> n_branch_rates_53
+   n_ugam_rate -> n_branch_rates_54
+   n_ugam_rate -> n_branch_rates_55
+   n_ugam_rate -> n_branch_rates_56
+   n_ugam_rate -> n_branch_rates_57
+   n_ugam_rate -> n_branch_rates_58
+   n_ugam_rate -> n_branch_rates_59
+   n_ugam_rate -> n_branch_rates_60
+   n_ugam_rate -> n_branch_rates_61
+   n_ugam_rate -> n_branch_rates_62
+   n_ugam_rate -> n_branch_rates_63
+   n_ugam_rate -> n_branch_rates_64
+   n_ugam_rate -> n_branch_rates_65
+   n_ugam_rate -> n_branch_rates_66
+   n_ugam_rate -> n_branch_rates_67
+   n_ugam_rate -> n_branch_rates_68
+   n_ugam_rate -> n_branch_rates_69
+   n_ugam_rate -> n_branch_rates_70
+   n_ugam_rate -> n_branch_rates_71
+   n_ugam_rate -> n_branch_rates_72
+   n_ugam_rate -> n_branch_rates_73
+   n_ugam_rate -> n_branch_rates_74
+   n_ugam_rate -> n_branch_rates_75
+   n_ugam_rate -> n_branch_rates_76
+   n_ugam_rate -> n_branch_rates_77
+   n_ugam_rate -> n_branch_rates_78
+   n_ugam_rate -> n_branch_rates_79
+   n_ugam_rate -> n_branch_rates_80
+   n_ugam_rate -> n_branch_rates_81
+   n_ugam_rate -> n_branch_rates_82
+   n_ugam_rate -> n_branch_rates_83
+   n_ugam_rate -> n_branch_rates_84
+   n_ugam_rate -> n_branch_rates_85
+   n_ugam_rate -> n_branch_rates_86
+   n_ugam_rate -> n_branch_rates_87
+   n_ugam_rate -> n_branch_rates_88
+   n_ugam_rate -> n_branch_rates_89
+   n_ugam_rate -> n_branch_rates_90
+   n_ugam_rate -> n_branch_rates_91
+   n_ugam_rate -> n_branch_rates_92
+   n_ugam_rate -> n_branch_rates_93
+   n_ugam_rate -> n_branch_rates_94
+   n_ugam_rate -> n_branch_rates_95
+   n_ugam_rate -> n_branch_rates_96
+   n_ugam_rate -> n_branch_rates_97
+   n_ugam_rate -> n_branch_rates_98
+   n_ugam_rate -> n_branch_rates_2
+   n_ugam_rate -> n_branch_rates_1
+   n_0x7f87fbe14970 -> n_ugam_rate
+   n_branch_rates_3 -> n_branch_rates[style=dashed]
+   n_branch_rates_4 -> n_branch_rates[style=dashed]
+   n_branch_rates_5 -> n_branch_rates[style=dashed]
+   n_branch_rates_6 -> n_branch_rates[style=dashed]
+   n_branch_rates_7 -> n_branch_rates[style=dashed]
+   n_branch_rates_8 -> n_branch_rates[style=dashed]
+   n_branch_rates_9 -> n_branch_rates[style=dashed]
+   n_branch_rates_10 -> n_branch_rates[style=dashed]
+   n_branch_rates_11 -> n_branch_rates[style=dashed]
+   n_branch_rates_12 -> n_branch_rates[style=dashed]
+   n_branch_rates_13 -> n_branch_rates[style=dashed]
+   n_branch_rates_14 -> n_branch_rates[style=dashed]
+   n_branch_rates_15 -> n_branch_rates[style=dashed]
+   n_branch_rates_16 -> n_branch_rates[style=dashed]
+   n_branch_rates_17 -> n_branch_rates[style=dashed]
+   n_branch_rates_18 -> n_branch_rates[style=dashed]
+   n_branch_rates_19 -> n_branch_rates[style=dashed]
+   n_branch_rates_20 -> n_branch_rates[style=dashed]
+   n_branch_rates_21 -> n_branch_rates[style=dashed]
+   n_branch_rates_22 -> n_branch_rates[style=dashed]
+   n_branch_rates_23 -> n_branch_rates[style=dashed]
+   n_branch_rates_24 -> n_branch_rates[style=dashed]
+   n_branch_rates_25 -> n_branch_rates[style=dashed]
+   n_branch_rates_26 -> n_branch_rates[style=dashed]
+   n_branch_rates_27 -> n_branch_rates[style=dashed]
+   n_branch_rates_28 -> n_branch_rates[style=dashed]
+   n_branch_rates_29 -> n_branch_rates[style=dashed]
+   n_branch_rates_30 -> n_branch_rates[style=dashed]
+   n_branch_rates_31 -> n_branch_rates[style=dashed]
+   n_branch_rates_32 -> n_branch_rates[style=dashed]
+   n_branch_rates_33 -> n_branch_rates[style=dashed]
+   n_branch_rates_34 -> n_branch_rates[style=dashed]
+   n_branch_rates_35 -> n_branch_rates[style=dashed]
+   n_branch_rates_36 -> n_branch_rates[style=dashed]
+   n_branch_rates_37 -> n_branch_rates[style=dashed]
+   n_branch_rates_38 -> n_branch_rates[style=dashed]
+   n_branch_rates_39 -> n_branch_rates[style=dashed]
+   n_branch_rates_40 -> n_branch_rates[style=dashed]
+   n_branch_rates_41 -> n_branch_rates[style=dashed]
+   n_branch_rates_42 -> n_branch_rates[style=dashed]
+   n_branch_rates_43 -> n_branch_rates[style=dashed]
+   n_branch_rates_44 -> n_branch_rates[style=dashed]
+   n_branch_rates_45 -> n_branch_rates[style=dashed]
+   n_branch_rates_46 -> n_branch_rates[style=dashed]
+   n_branch_rates_47 -> n_branch_rates[style=dashed]
+   n_branch_rates_48 -> n_branch_rates[style=dashed]
+   n_branch_rates_49 -> n_branch_rates[style=dashed]
+   n_branch_rates_50 -> n_branch_rates[style=dashed]
+   n_branch_rates_51 -> n_branch_rates[style=dashed]
+   n_branch_rates_52 -> n_branch_rates[style=dashed]
+   n_branch_rates_53 -> n_branch_rates[style=dashed]
+   n_branch_rates_54 -> n_branch_rates[style=dashed]
+   n_branch_rates_55 -> n_branch_rates[style=dashed]
+   n_branch_rates_56 -> n_branch_rates[style=dashed]
+   n_branch_rates_57 -> n_branch_rates[style=dashed]
+   n_branch_rates_58 -> n_branch_rates[style=dashed]
+   n_branch_rates_59 -> n_branch_rates[style=dashed]
+   n_branch_rates_60 -> n_branch_rates[style=dashed]
+   n_branch_rates_61 -> n_branch_rates[style=dashed]
+   n_branch_rates_62 -> n_branch_rates[style=dashed]
+   n_branch_rates_63 -> n_branch_rates[style=dashed]
+   n_branch_rates_64 -> n_branch_rates[style=dashed]
+   n_branch_rates_65 -> n_branch_rates[style=dashed]
+   n_branch_rates_66 -> n_branch_rates[style=dashed]
+   n_branch_rates_67 -> n_branch_rates[style=dashed]
+   n_branch_rates_68 -> n_branch_rates[style=dashed]
+   n_branch_rates_69 -> n_branch_rates[style=dashed]
+   n_branch_rates_70 -> n_branch_rates[style=dashed]
+   n_branch_rates_71 -> n_branch_rates[style=dashed]
+   n_branch_rates_72 -> n_branch_rates[style=dashed]
+   n_branch_rates_73 -> n_branch_rates[style=dashed]
+   n_branch_rates_74 -> n_branch_rates[style=dashed]
+   n_branch_rates_75 -> n_branch_rates[style=dashed]
+   n_branch_rates_76 -> n_branch_rates[style=dashed]
+   n_branch_rates_77 -> n_branch_rates[style=dashed]
+   n_branch_rates_78 -> n_branch_rates[style=dashed]
+   n_branch_rates_79 -> n_branch_rates[style=dashed]
+   n_branch_rates_80 -> n_branch_rates[style=dashed]
+   n_branch_rates_81 -> n_branch_rates[style=dashed]
+   n_branch_rates_82 -> n_branch_rates[style=dashed]
+   n_branch_rates_83 -> n_branch_rates[style=dashed]
+   n_branch_rates_84 -> n_branch_rates[style=dashed]
+   n_branch_rates_85 -> n_branch_rates[style=dashed]
+   n_branch_rates_86 -> n_branch_rates[style=dashed]
+   n_branch_rates_87 -> n_branch_rates[style=dashed]
+   n_branch_rates_88 -> n_branch_rates[style=dashed]
+   n_branch_rates_89 -> n_branch_rates[style=dashed]
+   n_branch_rates_90 -> n_branch_rates[style=dashed]
+   n_branch_rates_91 -> n_branch_rates[style=dashed]
+   n_branch_rates_92 -> n_branch_rates[style=dashed]
+   n_branch_rates_93 -> n_branch_rates[style=dashed]
+   n_branch_rates_94 -> n_branch_rates[style=dashed]
+   n_branch_rates_95 -> n_branch_rates[style=dashed]
+   n_branch_rates_96 -> n_branch_rates[style=dashed]
+   n_branch_rates_97 -> n_branch_rates[style=dashed]
+   n_branch_rates_98 -> n_branch_rates[style=dashed]
    n_base_rate -> n_branch_subrates[style=dashed]
    n_Q -> n_phySeq
    {rank=same; n_phySeq;}
